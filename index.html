@@ -18,7 +18,9 @@
   </head>
 
   <body>
-    <section class="header">
+    <!---------------- HEADER ---------------->
+    <header class="header">
+      <!-- NAVIGATION -->
       <nav>
         <a href="index.html"
           ><img src="images/bodydesignlogo-bgremoved.png"
@@ -26,8 +28,8 @@
         <div class="nav-links" id="navLinks">
           <i class="fas fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="">O NAS</a></li>
-            <li><a href="">ZAJĘCIA</a></li>
+            <li><a href="index.html">O NAS</a></li>
+            <li><a href="classes.html">ZAJĘCIA</a></li>
             <li><a href="">GALERIA</a></li>
             <li><a href="">CENNIK</a></li>
             <li><a href="">KONTAKT</a></li>
@@ -35,88 +37,85 @@
         </div>
         <i class="fas fa-bars" onclick="showMenu()"></i>
       </nav>
-
+      <!-- TEXT BOX  -->
       <div class="text-box">
         <h1>Studio Tańca i Fitness</h1>
         <p>
           Body Design to wyjątkowe, awangardowe miejsce, w którym każdy,<br />nawet
           najbardziej wymagający, człowiek odnajdzie cząstkę siebie.
         </p>
-        <a href="" class="hero-btn">Sprawdź ofertę zajęć</a>
+        <a href="classes.html" class="hero-btn">Sprawdź ofertę zajęć</a>
       </div>
-    </section>
+    </header>
 
-    <!-----------------ZAJĘCIA--------------->
+    <main>
+      <!----------------- CLASS TYPES --------------->
+      <section class="content">
+        <div class="subheader">
+          <h1>Zajęcia</h1>
+          <p>W naszym studio oferujemy różne formy zajęć dla każdego.</p>
+        </div>
+        <div class="row">
+          <div class="content-col">
+            <img src="images/taniec.jpg   " />
+            <h3>Taniec</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquet turpis nulla.
+            </p>
+          </div>
+          <div class="content-col">
+            <img src="images/fitness.jpg" />
+            <h3>Fitness</h3>
+            <p>
+              Trening nastawiony na rozwój fizyczny oraz poprawę sprawności.
+              Pozwala rozwijać wszystkie cechy motoryczne naszego ciała.
+            </p>
+          </div>
+          <div class="content-col">
+            <img src="images/prozdrowotne.jpg" />
+            <h3>Zajęcia prozdrowotne</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquet turpis nulla.
+            </p>
+          </div>
+        </div>
+        <!--------------- ROOMS ----------------->
+        <div class="subheader">
+          <h1>Nasze sale</h1>
+          <p>To tutaj dzieje się cała magia.</p>
+        </div>
 
-    <section class="facilities">
-      <div class="subheader">
-        <h1>Zajęcia</h1>
-        <p>W naszym studio oferujemy różne formy zajęć dla każdego.</p>
-      </div>
-      <div class="row">
-        <div class="facilities-col">
-          <img src="images/taniec.jpg   " />
-          <h3>Taniec</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque aliquet turpis nulla.
-          </p>
+        <div class="row">
+          <div class="content-col">
+            <img src="images/salakwiatowa.jpg   " />
+            <h3>Sala Kwiatowa</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquet turpis nulla.
+            </p>
+          </div>
+          <div class="content-col">
+            <img src="images/saladuza.jpg" />
+            <h3>Sala Duża</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquet turpis nulla.
+            </p>
+          </div>
+          <div class="content-col">
+            <img src="images/salamala.jpg" />
+            <h3>Sala Mała</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquet turpis nulla.
+            </p>
+          </div>
         </div>
-        <div class="facilities-col">
-          <img src="images/fitness.jpg" />
-          <h3>Fitness</h3>
-          <p>
-            Trening nastawiony na rozwój fizyczny oraz poprawę sprawności.
-            Pozwala rozwijać wszystkie cechy motoryczne naszego ciała.
-          </p>
-        </div>
-        <div class="facilities-col">
-          <img src="images/prozdrowotne.jpg" />
-          <h3>Zajęcia prozdrowotne</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque aliquet turpis nulla.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!------------- SALE ----------->
-    <section class="facilities">
-      <div class="subheader">
-        <h1>Nasze sale</h1>
-        <p>To tutaj dzieje się cała magia.</p>
-      </div>
-
-      <div class="row">
-        <div class="facilities-col">
-          <img src="images/salakwiatowa.jpg   " />
-          <h3>Sala Kwiatowa</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque aliquet turpis nulla.
-          </p>
-        </div>
-        <div class="facilities-col">
-          <img src="images/saladuza.jpg" />
-          <h3>Sala Duża</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque aliquet turpis nulla.
-          </p>
-        </div>
-        <div class="facilities-col">
-          <img src="images/salamala.jpg" />
-          <h3>Sala Mała</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque aliquet turpis nulla.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-------------Find us--------------->
+      </section>
+    </main>
+    <!-------------FIND US--------------->
 
     <section class="find-us">
       <h1>Tutaj jesteśmy!</h1>
@@ -131,7 +130,7 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </section>
-    <!-------------Footer--------------->
+    <!-------------FOOTER--------------->
 
     <footer>
       <div class="footer-container">
@@ -170,7 +169,6 @@
             ><i class="fa-brands fa-instagram"></i
           ></a>
         </div>
-        <!-- </div> -->
       </div>
       <div class="footer-row">
         <small>Copyright &copy 2022 Body Design</small>

@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-.header {
+header {
   min-height: 100vh;
   width: 100%;
   /* background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner.jpg) */
@@ -19,6 +19,7 @@
 }
 body {
   color: #423527;
+  overscroll-behavior-x: none;
 }
 nav {
   display: flex;
@@ -26,7 +27,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  
 }
 nav img {
   width: 40%;
@@ -46,7 +46,6 @@ nav img {
 .nav-links ul li a {
   color: #af9664;
   text-decoration: none;
-  
 }
 .nav-links ul li::after {
   content: "";
@@ -62,7 +61,7 @@ nav img {
 }
 
 .text-box {
-  margin-top: 5rem;
+  margin-top: 6rem;
   width: 90%;
   color: #fff;
   position: absolute;
@@ -73,6 +72,7 @@ nav img {
 
 .text-box h1 {
   font-size: 3rem;
+  font-weight: 600;
 }
 
 .text-box p {
@@ -111,6 +111,7 @@ nav .fas {
     display: block;
     margin-bottom: 15px;
   }
+
   .nav-links {
     position: absolute;
     background: #423527;
@@ -119,7 +120,7 @@ nav .fas {
     top: 0;
     right: -200px;
     text-align: left;
-    z-index: 3;
+    z-index: 1;
     transition: 0.2s;
     color: #af9664;
   }
@@ -134,24 +135,21 @@ nav .fas {
     padding: 25px;
   }
   .hero-btn:active {
-  border: 1px solid#af9664;
-  background: #af9664;
-  transition: 0.01s;
-}
-}
-
-/*----- course -----*/
-
-.subheader{
-  margin-bottom: 1rem;
+    border: 1px solid#af9664;
+    background: #af9664;
+    transition: 0.01s;
+  }
 }
 
-h1 {
+/*---------- CONTENT ----------*/
+
+.content h1 {
+  margin-top: 4rem;
   font-size: 2rem;
   font-weight: 600;
 }
 
-p {
+.content p {
   color: #777;
   font-size: 1.25rem;
   font-weight: 300;
@@ -159,12 +157,12 @@ p {
 }
 
 .row {
-  margin-top: 5%;
+  margin-top: 2%;
   display: flex;
   justify-content: space-between;
 }
 
-h3 {
+.content h3 {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 600;
@@ -176,37 +174,34 @@ h3 {
     flex-direction: column;
     margin-bottom: 2rem;
   }
-  p {
+  .content p {
     margin-bottom: 40px;
   }
 }
 
-/*---------- facilities ----------*/
-.facilities {
+.content {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 50px;
 }
 
-.facilities-col {
+.content-col {
   flex-basis: 32%;
-  border-radius: 10px;
-  margin-bottom: 5%;
+  margin: 0 15px 2rem 15px;
   text-align: left;
 }
 
-.facilities-col img {
+.content-col img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 9px;
   margin-bottom: 10px;
 }
 
-.facilities-col p {
+.content-col p {
   padding: 0;
 }
 
-.facilities-col h3 {
+.content-col h3 {
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: left;
@@ -277,7 +272,6 @@ footer h4 {
 li {
   text-decoration: none;
   color: rgba(67, 51, 39, 0.7);
-  
 }
 
 .fa,
@@ -309,16 +303,155 @@ li {
   }
   .footer-container {
     flex-direction: column;
-    
   }
   .column {
     text-align: center;
     padding: 0 0 30px 0;
   }
-  .column-list{
-   text-align: left;
+  .column-list {
+    text-align: left;
   }
   .column li {
     margin-bottom: 8px;
   }
+}
+
+/* DANCE CLASSES */
+.dance-class-container {
+  width: auto;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 2% 2% 2% 2%;
+}
+
+.dance-class-container h1 {
+  text-shadow: 5px 3px rgba(201, 201, 201, 0.628);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.dance-class-container h3 {
+  text-shadow: 3px 2px rgba(201, 201, 201, 0.628);
+}
+
+.dance-class-container p {
+  margin: 10px 0 40px;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.classes .subheader {
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 5px 3px rgba(71, 71, 71, 0.628);
+}
+
+.dance {
+background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f6f4ed' fill-opacity='1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+.fitness{
+background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23f6f4ed' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.prozdrowotne{
+background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f6f4ed' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.right {
+  text-align: right;
+}
+
+.hiphop {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.41),
+      rgba(208, 208, 208, 0.7)
+    ),
+    url(images/hiphop.jpg);
+    
+}
+
+
+
+.salsa {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.451),
+      rgba(208, 208, 208, 0.7)
+    ),
+    url(images/salsa.jpg);
+}
+
+.zumba {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.451),
+      rgba(208, 208, 208, 0.7)
+    ),
+    url(images/zumba.jpg);
+}
+.salsation {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.451),
+      rgba(208, 208, 208, 0.7)
+    ),
+    url(images/salsation.jpg);
+}
+
+.dancefusion {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.507),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/dancefusion.jpg);
+}
+
+.bup {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.507),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/bup.jpg);
+}
+
+.shape {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.345),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/shape.jpg);
+}
+.fizjotrening {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.345),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/fizjotrening.jpg);
+}
+
+.latinsolo {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.345),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/latinsolo.jpg);
+}
+
+.towarzyski {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.345),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/towarzyski.jpg);
+}
+
+.reggaeton {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.345),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/reggaeton.jpg);
 }
