@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="=with=device-width, initial-scale=1.0" />
+    <title>Cennik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+    <script
+      src="https://kit.fontawesome.com/ccd115985e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="index.html"><img src="images/bodydesignlogo-bgremoved.png" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">O NAS</a></li>
+          <li><a href="zajecia.html">ZAJĘCIA</a></li>
+          <li><a href="grafik.html">GRAFIK</a></li>
+          <li><a href="cennik.html">CENNIK</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- PRICES -->
+    <main>
+      <div class="prices-container">
+        <div class="price-box dance-block">
+          <h1>TANIEC</h1>
+          <ul class="price-list">
+            <li>POJEDYNCZE ZAJĘCIA - 30zł</li>
+            <li>4 ZAJĘCIA - 115zł</li>
+            <li>8 ZAJĘĆ - 200zł</li>
+          </ul>
+        </div>
+        <div class="price-box fitness-block">
+          <h1>FITNESS</h1>
+          <ul class="price-list">
+            <li>POJEDYNCZE ZAJĘCIA - 30zł</li>
+            <li>4 ZAJĘCIA - 115zł</li>
+            <li>8 ZAJĘĆ - 200zł</li>
+          </ul>
+        </div>
+        <div class="price-box prozdrowotne-block smaller">
+          <h1 class="smallify">ZAJĘCIA<br>PROZDROWOTNE</h1>
+          <ul class="price-list">
+            <li>POJEDYNCZE ZAJĘCIA - 30zł</li>
+            <li>4 ZAJĘCIA - 115zł</li>
+            <li>8 ZAJĘĆ - 200zł</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!------------- FOOTER --------------->
+    <footer>
+      <div class="footer-container">
+        <!-- BROWSE -->
+        <div class="browse-column column">
+          <h4>Przeglądaj</h4>
+          <ul class="column-list">
+            <li><a href="#">Zajęcia</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Cennik</a></li>
+          </ul>
+        </div>
+        <!-- CONTACT -->
+        <div class="contact-column column">
+          <h4>Kontakt</h4>
+          <ul class="column-list">
+            <li>
+              <i class="fa fa-solid fa-envelope"></i>bodydesign.wielun@gmail.com
+            </li>
+            <li><i class="fa fa-solid fa-phone"></i>508 200 147</li>
+            <li>
+              <i class="fa fa-solid fa-location-dot"></i> Wodna 7, 98-300 Wieluń
+            </li>
+          </ul>
+          <!-- MORE -->
+        </div>
+        <div class="more-column column">
+          <h4>Więcej nas</h4>
+          <a
+            href="https://www.facebook.com/BodyDesignStudioTancaIFitness/?ref=page_internal"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/bodydesignwielun/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-row">
+        <small>Copyright &copy 2022 Body Design</small>
+      </div>
+    </footer>
+    <!-------------Javascript for Toggle Menu--------------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
