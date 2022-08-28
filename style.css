@@ -495,7 +495,8 @@ li {
   gap: 25px;
   justify-content: center;
   padding: 50px 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  margin: 0 20px;
 }
 
 .headers,
@@ -528,7 +529,7 @@ li {
   border-right: 1.5px solid black;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1020px) {
   .schedule-container {
     flex-direction: column;
     padding: 15px;

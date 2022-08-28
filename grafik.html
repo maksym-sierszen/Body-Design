@@ -20,25 +20,67 @@
   <body>
     <!-- NAVIGATION -->
     <nav>
-        <img src="images/bodydesignlogo-bgremoved.png" id="logo-img">
-        <div class="nav-links" id="navLinks">
-          <i class="fas fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">O NAS</a></li>
-            <li><a href="zajecia.html">ZAJĘCIA</a></li>
-            <li><a href="grafik.html">GRAFIK</a></li>
-            <li><a href="cennik.html">CENNIK</a></li>
-            <li><a href="kadra.html">KADRA</a></li>
-            <li><a href="oferta.html">OFERTA</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
-          </ul>
-        </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i>
-      </nav>
+      <img src="images/bodydesignlogo-bgremoved.png" id="logo-img" />
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">O NAS</a></li>
+          <li><a href="zajecia.html">ZAJĘCIA</a></li>
+          <li><a href="grafik.html">GRAFIK</a></li>
+          <li><a href="cennik.html">CENNIK</a></li>
+          <li><a href="kadra.html">KADRA</a></li>
+          <li><a href="oferta.html">OFERTA</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
 
     <!-- SCHEDULE -->
     <main>
       <div class="schedule-container">
+        <!-- MONDAY -->
+        <div class="schedule-column monday">
+          <div class="headers">
+            <h1>PONIEDZIAŁEK</h1>
+            <p class="time-p">18:00</p>
+          </div>
+          <div class="class-day">
+            <div class="class-block prozdrowotne-block">
+              <h3>ZDROWY KRĘGOSŁUP</h3>
+              <p>Wiola</p>
+            </div>
+            <div class="class-block dance-block">
+              <h3>SALSA</h3>
+              <p>(gr. początk.)</p>
+              <p>Ania</p>
+            </div>
+            
+            <br />
+            <p class="time-p">19:00</p>
+            <div class="class-block dance-block">
+              <h3>SALSA</h3>
+              <p>(gr. zaaw.)</p>
+              <p>Ania</p>
+            </div>
+            <div class="class-block dance-block">
+              <h3>SALSATION</h3>
+              <p>(gr. początk.)</p>
+              <p>Monika</p>
+            </div>
+            <br />
+            <p class="time-p">20:00</p>
+            <div class="class-block dance-block">
+              <h3>BACHATA / LADIES STYLE</h3>
+              <p>Ania</p>
+            </div>
+            <div class="class-block dance-block">
+              <h3>TANIEC TOWARZYSKI</h3>
+              <p>(gr. początk.)</p>
+              <p>Rafał</p>
+            </div>
+          </div>
+        </div>
         <!-- TUESDAY -->
         <div class="schedule-column tuesday">
           <div class="headers">
@@ -46,17 +88,27 @@
             <p class="time-p">18:00</p>
           </div>
           <div class="class-day">
+            <div class="class-block dance-block">
+              <h3>TANIEC TOWARZYSKI</h3>
+              <p>(gr. średniozaaw.)</p>
+              <p>Rafał</p>
+            </div>
             <div class="class-block fitness-block">
-              <h3>BUP+SHAPE</h3>
-              <p>Gosia</p>
-              <p>SALA KWIATOWA</p>
+              <h3>BODY PUMP</h3>
+              <p>Nadia</p>
             </div>
             <br />
             <p class="time-p">19:00</p>
             <div class="class-block dance-block">
-              <h3>DANCE FUSION</h3>
-              <p>Kinga</p>
-              <p>SALA DUŻA</p>
+              <h3>LATIN SOLO</h3>
+              <p>(gr. średniozaaw.)</p>
+              <p>Rafał</p>
+            </div>
+            <br />
+            <p class="time-p">20:00</p>
+            <div class="class-block dance-block">
+              <h3>LATIN SOLO - TECHNIKA</h3>
+              <p>Rafał</p>
             </div>
           </div>
         </div>
@@ -64,25 +116,51 @@
         <div class="schedule-column wednesday">
           <div class="headers">
             <h1>ŚRODA</h1>
-            <p class="time-p">18:00</p>
+            <p class="time-p">17:00</p>
           </div>
           <div class="class-day">
             <div class="class-block dance-block">
-              <h3>SALSA</h3>
-              <p>Ania</p>
-              <p>SALA KWIATOWA</p>
+              <h3>ABC TAŃCA</h3>
+              <p>(dzieci 4-6 lat)</p>
+              <p>Rafał</p>
+            </div>
+            <div class="class-block dance-block">
+              <h3>JUNIOR DANCE</h3>
+              <p>(dzieci 10+)</p>
+              <p>Maja</p>
+            </div>
+            <br />
+            <p class="time-p">18:00</p>
+            <div class="class-block dance-block">
+              <h3>REGGAETON / SEXY DANCE</h3>
+              <p>Maja</p>
+            </div>
+            <div class="class-block dance-block">
+              <h3>LATIN SOLO</h3>
+              <p>(gr. początk.)</p>
+              <p>Rafał</p>
+            </div>
+            <div class="class-block fitness-block">
+              <h3>BUP + SHAPE</h3>
+              <p>Gosia</p>
             </div>
             <br />
             <p class="time-p">19:00</p>
-            <div class="class-block dance-block">
-              <h3>SALSATION</h3>
-              <p>Monika</p>
-              <p>SALA DUŻA</p>
+            <div class="class-block fitness-block">
+              <h3>JOGA</h3>
+              <p>Edyta</p>
             </div>
             <div class="class-block dance-block">
-              <h3>SALSA</h3>
-              <p>Ania</p>
-              <p>SALA DUŻA</p>
+              <h3>LATIN SOLO</h3>
+              <p>(gr. średniozaaw.)</p>
+              <p>Rafał</p>
+            </div>
+            <br />
+            <p class="time-p">20:00</p>
+            <div class="class-block dance-block">
+              <h3>TANIEC TOWARZYSKI</h3>
+              <p>(gr. zaaw.)</p>
+              <p>Rafał</p>
             </div>
           </div>
         </div>
@@ -94,21 +172,23 @@
           </div>
           <div class="class-day">
             <div class="class-block fitness-block">
-              <h3>ZUMBA</h3>
-              <p>Marta</p>
-              <p>SALA DUŻA</p>
-            </div>
-            <div class="class-block fitness-block">
               <h3>SHAPE+PŁASKI BRZUCH</h3>
               <p>Patrycja</p>
-              <p>SALA KWIATOWA</p>
+            </div>
+            <div class="class-block fitness-block">
+              <h3>ZUMBA</h3>
+              <p>Marta</p>
             </div>
             <br />
             <p class="time-p">19:00</p>
             <div class="class-block prozdrowotne-block">
               <h3>FIZJOTRENING</h3>
               <p>Marta</p>
-              <p>SALA DUŻA</p>
+            </div>
+            <div class="class-block dance-block">
+              <h3>LATIN SOLO</h3>
+              <p>(gr. zaaw.)</p>
+              <p>Rafał</p>
             </div>
           </div>
         </div>
@@ -119,24 +199,42 @@
             <p class="time-p">18:00</p>
           </div>
           <div class="class-day">
-            <div class="class-block fitness-block">
-              <h3>BUP</h3>
-              <p>TRENING INTENSYWNY</p>
-              <p>Nadia</p>
-              <p>SALA KWIATOWA</p>
+            <div class="class-block dance-block">
+              <h3>DANCE KIDS</h3>
+              <p>(dzieci 6+)</p>
+              <p>Kinga</p>
             </div>
+            
             <div class="class-block dance-block">
               <h3>HIP-HOP</h3>
-              <p>OPEN (WSZYSTKIE POZIOMY)</p>
+              <p>(gr. początk.)</p>
               <p>Miłosz</p>
-              <p>SALA DUŻA</p>
+            </div>
+            <div class="class-block fitness-block">
+              <h3>BUP + SHAPE</h3>
+              <p>Nadia</p>
             </div>
             <br />
             <p class="time-p">19:00</p>
             <div class="class-block dance-block">
               <h3>DANCE FUSION</h3>
               <p>Kinga</p>
-              <p>SALA KWIATOWA</p>
+            </div>
+            <div class="class-block dance-block">
+              <h3>HIP-HOP KIDS</h3>
+              <p>Miłosz</p>
+            </div>
+            <br />
+            <p class="time-p">20:00</p>
+            <div class="class-block dance-block">
+              <h3>SALSATION</h3>
+              <p>(gr. zaaw.)</p>
+              <p>Kinga</p>
+            </div>
+            <div class="class-block dance-block">
+              <h3>HIP-HOP</h3>
+              <p>(gr. zaaw.)</p>
+              <p>Miłosz</p>
             </div>
           </div>
         </div>
