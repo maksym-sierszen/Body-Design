@@ -481,6 +481,21 @@ li {
     ),
     url(images/classes/reggaeton4.jpg);
 }
+
+.zdrowykregoslup {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.345),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/classes/zdrowykregoslup.jpg);
+}
+.bachata {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.345),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/classes/bachata.jpg);
+}
 .right {
   text-align: right;
 }
