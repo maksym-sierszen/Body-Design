@@ -234,6 +234,9 @@ nav .fas {
   margin: auto;
 }
 
+.rooms h3 {
+  text-align: center;
+}
 /*---------- Find us ----------*/
 
 .find-us {
@@ -496,6 +499,20 @@ li {
     ),
     url(images/classes/bachata.jpg);
 }
+.joga {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.345),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/classes/joga.jpg);
+}
+.abc {
+  background-image: linear-gradient(
+      rgba(67, 51, 39, 0.345),
+      rgba(208, 208, 208, 0.802)
+    ),
+    url(images/classes/abc.jpg);
+}
 .right {
   text-align: right;
 }
@@ -663,7 +680,7 @@ li {
 
 .instructor-textbox {
   margin: 10px 20px;
-  
+
 }
 
 .instructor-titles{
