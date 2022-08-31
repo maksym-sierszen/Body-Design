@@ -1,133 +1,283 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="=with=device-width, initial-scale=1.0" />
-    <title>Cennik</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
-    <script
-      src="https://kit.fontawesome.com/ccd115985e.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <!-- NAVIGATION -->
-    <nav>
-        <img src="images/bodydesignlogo-bgremoved.png" id="logo-img">
-        <div class="nav-links" id="navLinks">
-          <i class="fas fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">O NAS</a></li>
-            <li><a href="zajecia.html">ZAJĘCIA</a></li>
-            <li><a href="grafik.html">GRAFIK</a></li>
-            <li><a href="cennik.html">CENNIK</a></li>
-            <li><a href="kadra.html">KADRA</a></li>
-            <li><a href="oferta.html">OFERTA</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
-          </ul>
-        </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i>
-      </nav>
+<head>
+  <meta charset="utf-8" />
 
-    <!-- PRICES -->
-    <main>
-      <div class="prices-container">
-          <h1>Wkrótce damy znać:)</h1>
-          <h1>Wkrótce damy znać:)</h1>
-          <h1>Wkrótce damy znać:)</h1>
-          <h1>Wkrótce damy znać:)</h1>
-          <h1>Wkrótce damy znać:)</h1>
-          <h1>Wkrótce damy znać:)</h1>
+  <meta name="viewport" content="=with=device-width, initial-scale=1.0" />
+  <title>Cennik</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+  <script src="https://kit.fontawesome.com/ccd115985e.js" crossorigin="anonymous"></script>
+</head>
 
-        <!-- <div class="price-box dance-block">
-          <h1>TANIEC</h1>
-          <ul class="price-list">
-            <li>POJEDYNCZE ZAJĘCIA - 30zł</li>
-            <li>4 ZAJĘCIA - 115zł</li>
-            <li>8 ZAJĘĆ - 200zł</li>
-          </ul>
-        </div>
-        <div class="price-box fitness-block">
-          <h1>FITNESS</h1>
-          <ul class="price-list">
-            <li>POJEDYNCZE ZAJĘCIA - 30zł</li>
-            <li>4 ZAJĘCIA - 115zł</li>
-            <li>8 ZAJĘĆ - 200zł</li>
-          </ul>
-        </div>
-        <div class="price-box prozdrowotne-block smaller">
-          <h1 class="smallify">ZAJĘCIA<br>PROZDROWOTNE</h1>
-          <ul class="price-list">
-            <li>POJEDYNCZE ZAJĘCIA - 30zł</li>
-            <li>4 ZAJĘCIA - 115zł</li>
-            <li>8 ZAJĘĆ - 200zł</li>
-          </ul>
-        </div> -->
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <img src="images/bodydesignlogo-bgremoved.png" id="logo-img" />
+    <div class="nav-links" id="navLinks">
+      <i class="fas fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="/">O NAS</a></li>
+        <li><a href="zajecia">ZAJĘCIA</a></li>
+        <li><a href="grafik">GRAFIK</a></li>
+        <li><a href="cennik">CENNIK</a></li>
+        <li><a href="kadra">KADRA</a></li>
+        <li><a href="kontakt">KONTAKT</a></li>
+      </ul>
+    </div>
+    <i class="fas fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+  <!-- PRICES -->
+  <main>
+    <div class="prices-container">
+
+      <div class="prices-main-heading">
+        <h1>KARNETY</h1>
+
       </div>
-    </main>
 
-    <!------------- FOOTER --------------->
-    <footer>
-      <div class="footer-container">
-        <!-- BROWSE -->
-        <div class="browse-column column">
-          <h4>Przeglądaj</h4>
-          <ul class="column-list">
-            <li><a href="#logo-img">O nas</a></li>
-            <li><a href="zajecia.html">Zajęcia</a></li>
-            <li><a href="grafik.html">Grafik</a></li>
-            <li><a href="cennik.html">Cennik</a></li>
-            <li><a href="kadra.html">Kadra</a></li>
-            <li><a href="oferta.html">Oferta</a></li>
-          </ul>
+      <!-- GROUP -->
+      <div class="prices-group-container">
+        <!-- FITNESS (GRID ELEMENT 1) -->
+        <div class="price-block fitness-price grid-el1 fitness-block">
+          <div class="price-block-textbox">
+            <h1 class="price-text-gap">FITNESS</h1>
+            <ul class="price-list fitness-price">
+              <li>Jednorazowe - 25 zł</li>
+              <li>2 zajęcia - 46 zł</li>
+              <li>3 zajęcia - 61 zł</li>
+              <li>4 zajęcia - 78 zł</li>
+              <li>5 zajęcia - 97 zł</li>
+              <li>6 zajęcia - 110 zł</li>
+              <li>7 zajęcia - 119 zł</li>
+              <li>8 zajęcia - 136 zł</li>
+            </ul>
+          </div>
         </div>
-        <!-- CONTACT -->
-        <div class="contact-column column">
-          <h4>Kontakt</h4>
-          <ul class="column-list">
-            <li>
-              <i class="fa fa-solid fa-envelope"></i>bodydesign.wielun@gmail.com
-            </li>
-            <li><i class="fa fa-solid fa-phone"></i>508 200 147</li>
-            <li>
-              <i class="fa fa-solid fa-location-dot"></i> Wodna 7, 98-300 Wieluń
-            </li>
-          </ul>
-          <!-- MORE -->
+        <!-- YOGA (GRID ELEMENT 2) -->
+        <div class="price-block yoga-price grid-el2 fitness-block">
+          <div class="price-block-textbox">
+            <h1 class="price-text-gap">JOGA (90min)</h1>
+            <ul class="price-list">
+              <li>Jednorazowe - 30 zł</li>
+              <li>4 zajęcia - 98 zł</li>
+            </ul>
+          </div>
         </div>
-        <div class="more-column column">
-          <h4>Więcej nas</h4>
-          <a
-            href="https://www.facebook.com/BodyDesignStudioTancaIFitness/?ref=page_internal"
-            target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/bodydesignwielun/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+        <!-- SALSATION (GRID ELEMENT 3) -->
+        <div class="price-block salsation-price grid-el3 fitness-block">
+          <div class="price-block-textbox">
+            <h1 class="price-text-gap">SALSATION</h1>
+            <ul class="price-list">
+              <li>Jednorazowe - 26 zł</li>
+              <li>4 zajęcia - 88 zł</li>
+              <li>8 zajęć - 168 zł</li>
+            </ul>
+          </div>
+        </div>
+        <!-- DANCE KIDS/ABC/JUNIOR (GRID ELEMENT 4) -->
+        <div class="price-block kids-price grid-el4 dance-block">
+          <div class="price-block-textbox">
+            <h1 class="price-text-gap">
+              DANCE KIDS / ABC TAŃCA / DANCE JUNIOR
+            </h1>
+            <ul class="price-list">
+              <li>Jednorazowe - 26 zł</li>
+              <li>4 zajęcia - 82 zł</li>
+            </ul>
+          </div>
+        </div>
+        <!-- FIZJOTRENING (GRID ELEMENT 5) -->
+        <div class="price-block fizjotrening-price grid-el5 prozdrowotne-block">
+          <div class="price-block-textbox">
+            <h1 class="price-text-gap">FIZJOTRENING / ZDROWY KREGOSŁUP</h1>
+            <ul class="price-list">
+              <li>Jednorazowe - 26 zł</li>
+              <li>4 zajęcia - 80 zł</li>
+            </ul>
+          </div>
+        </div>
+        <!-- HIPHOP KIDS (GRID ELEMENT 6) -->
+        <div class="price-block hiphopkids-price grid-el6 dance-block">
+          <div class="price-block-textbox">
+            <h1 class="price-text-gap">HIP-HOP KIDS</h1>
+            <ul class="price-list">
+              <li>Jednorazowe - 26 zł</li>
+              <li>4 zajęcia - 82 zł</li>
+              <li>5 zajęć - 103 zł</li>
+            </ul>
+          </div>
+        </div>
+        <!-- ZUMBA (GRID ELEMENT 7) -->
+        <div class="price-block zumba-price grid-el7 fitness-block">
+          <div class="price-block-textbox">
+            <h1 class="price-text-gap">ZUMBA</h1>
+            <ul class="price-list">
+              <li>Jednorazowe - 26 zł</li>
+              <li>4 zajęcia - 88 zł</li>
+              <li>8 zajęć - 152 zł</li>
+            </ul>
+          </div>
+        </div>
+        <!-- HIPHOP BEGINNER  (GRID ELEMENT 8) -->
+        <div class="price-block hiphop-price grid-el8 dance-block">
+          <div class="price-block-textbox">
+            <div class="price-text-gap">
+              <h1>HIP-HOP</h1>
+              <h3>GRUPA POCZĄTKUJĄCA</h3>
+            </div>
+
+            <ul class="price-list">
+              <li>1 godzina - 32 zł</li>
+              <li>4 godziny - 120 zł</li>
+            </ul>
+          </div>
+        </div>
+        <!-- DANCE (GRID ELEMENT 9) -->
+        <div class="price-block dance-price grid-el9 dance-block">
+          <div class="price-block-textbox">
+            <div class="price-text-gap">
+              <h1>TANIEC</h1>
+              <h3>
+                TANIEC TOWARZYSKI / LATIN SOLO / SALSA / BACHATA / REGGEATON /
+                SEXY DANCE
+              </h3>
+            </div>
+            <ul class="price-list">
+              <li>Jednorazowe - 35 zł</li>
+              <li>4 zajęcia - 124 zł / 112 zł (młodzież)</li>
+              <li>8 zajęć - 220 zł / 200zł (młodzież)</li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- HIP HOP ADV (GRID ELEMENT 10) -->
+        <div class="price-block hiphopadv-price grid-el10 dance-block">
+          <div class="price-block-textbox">
+
+            <div class="price-text-gap">
+              <h1 class=>HIP-HOP</h1>
+              <h3>GRUPA ZAAWANSOWANA</h3>
+            </div>
+            <ul class="price-list">
+              <li>1 godzina - 32 zł</li>
+              <li>2 godziny - 56 zł</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <p class="discount">Zniżki: 10% [studenci – (fitness), emeryci, familijna (mama, tata, dziecko)]</p>
+
+      <div class="prices-main-heading individual">
+        <h1>ZAJĘCIA INDYWIDUALNE</h1>
+        <h1>60min</h1>
+      </div>
+      <!-- INDIVIDUAL -->
+      <div class="prices-individual-container">
+
+        <div class="price-block firstdance-price dance-block">
+          <div class="price-block-textbox">
+            <h1>PIERWSZY TANIEC WESELNY</h1>
+            <h3 class="price-text-gap">RAFAŁ</h3>
+
+            <ul class="price-list">
+              <li>125 zł / 150 zł</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="price-block fitnesnadiia-price fitness-block">
+          <div class="price-block-textbox">
+            <h1>TRENING PERSONALNY</h1>
+            <h3 class="price-text-gap">NADIIA</h3>
+
+            <ul class="price-list">
+              <li>90zł</li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+        <div class="price-block hiphopindividual-price dance-block">
+          <div class="price-block-textbox">
+            <h1>HIP HOP</h1>
+            <h3 class="price-text-gap">MIŁOSZ</h3>
+
+            <ul class="price-list">
+              <li>130zł</li>
+            </ul>
+
+          </div>
         </div>
       </div>
-      <div class="footer-row">
-        <small>Copyright &copy 2022 Body Design</small>
-      </div>
-    </footer>
-    <!-------------Javascript for Toggle Menu--------------->
-    <script>
-      var navLinks = document.getElementById("navLinks");
+      <!-- FIRST DANCE (GRID ELEMENT 11) -->
 
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
-  </body>
+    </div>
+  </main>
+
+  <!------------- FOOTER --------------->
+  <footer>
+    <div class="footer-container">
+      <!-- BROWSE -->
+      <div class="browse-column column">
+        <h4>Przeglądaj</h4>
+        <ul class="column-list">
+          <li><a href="#logo-img">O nas</a></li>
+          <li><a href="zajecia">Zajęcia</a></li>
+          <li><a href="grafik">Grafik</a></li>
+          <li><a href="cennik">Cennik</a></li>
+          <li><a href="kadra">Kadra</a></li>
+          <li><a href="oferta">Oferta</a></li>
+        </ul>
+      </div>
+      <!-- CONTACT -->
+      <div class="contact-column column">
+        <h4>Kontakt</h4>
+        <ul class="column-list">
+          <li>
+            <i class="fa fa-solid fa-envelope"></i>bodydesign.wielun@gmail.com
+          </li>
+          <li>
+            <i class="fa fa-solid fa-phone"></i>(601 640 945)
+            <strong>/</strong> (508 200 147)
+          </li>
+          <li>
+            <i class="fa fa-solid fa-location-dot"></i> Wodna 7, 98-300 Wieluń
+          </li>
+        </ul>
+        <!-- MORE -->
+      </div>
+      <div class="more-column column">
+        <h4>Więcej nas</h4>
+        <a href="https://www.facebook.com/BodyDesignStudioTancaIFitness/?ref=page_internal" target="_blank"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bodydesignwielun/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-row">
+      <small>Copyright &copy 2022 Body Design</small>
+    </div>
+  </footer>
+  <!-------------Javascript for Toggle Menu--------------->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
 </html>
