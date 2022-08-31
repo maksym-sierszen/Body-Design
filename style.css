@@ -633,11 +633,11 @@ h3 {
   text-align: center;
   font-size: 4rem;
 }
-.firstdance-price h1{
+.firstdance-price h1 {
   font-size: 1.8rem;
 }
 
-.discount{
+.discount {
   margin-bottom: 50px;
   font-size: 1.5rem;
 }
@@ -672,14 +672,16 @@ h3 {
   grid-area: 6 / 2 / 7 / 3;
 }
 @media (max-width: 1180px) {
-  .prices-group-container, .prices-individual-container {
+  .prices-group-container,
+  .prices-individual-container {
     display: flex;
     flex-direction: column;
     margin: 0 10vw;
   }
 }
 @media (max-width: 580px) {
-  .prices-group-container, .prices-individual-container {
+  .prices-group-container,
+  .prices-individual-container {
     display: flex;
     flex-direction: column;
     margin: 0 0.1vw;
@@ -688,10 +690,10 @@ h3 {
     padding: 10px;
   }
   .individual h1 {
-  font-size: 2.4rem;
+    font-size: 2.4rem;
+  }
 }
-}
-  
+
 /* CONTACT */
 
 .contact-container {
@@ -747,6 +749,44 @@ h3 {
 
 .instructor-description {
   font-size: 0.75rem;
+}
+
+/* DROPDOWN MENU */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  all: unset;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  margin-top: 15px;
+  display: none;
+  position: absolute;
+  background-color: #b7a286;
+  overflow: auto;
+  z-index: 1;
+  min-width:280px;
+  border-radius: 5px;
+}
+
+.dropdown-content ul {
+  text-decoration: none;
+  display: block;
+  margin: 5px 0 5px 10px;
+  cursor: auto;
+}
+
+.show {
+  display: block;
 }
 
 @media (max-width: 1180px) {
