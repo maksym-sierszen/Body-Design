@@ -1,0 +1,50 @@
+/* * SCHEDULE * */
+.schedule-container {
+  /* background-color: #ddc4b092;
+   */
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23c4b092' fill-opacity='0.08'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 50px 0;
+  font-size: 1.1rem;
+  margin: 0 20px;
+}
+
+.headers,
+.time-p {
+  text-align: center;
+}
+
+.time-p {
+  font-size: 1.25rem;
+}
+
+.class-block {
+  padding: 0 10px;
+}
+
+
+.class-day {
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+}
+
+@media (max-width: 1020px) {
+  .schedule-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .schedule-container {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1700px) {
+  .schedule-container {
+    font-size: 2rem;
+  }
+}
